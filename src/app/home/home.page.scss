@@ -1,11 +1,11 @@
 #container {
   text-align: center;
-
-  position: absolute;
+  position:absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  align-items: stretch;
 }
 
 #container strong {
@@ -24,4 +24,31 @@
 
 #container a {
   text-decoration: none;
+}
+
+ion-input{
+  border: 2px solid #e7ebee;
+  border-radius: 10px;
+  padding-bottom: 15px;
+  --padding-end: 15px;
+  --padding-start: 15px;
+  padding-top: 15px;
+}
+
+ion-button{
+  --border-radius: 30px;
+  --border-style: solid;
+  --padding-start: 80px;
+  --padding-bottom: 20px;
+  --padding-top: 20px;
+  --padding-end: 80px;
+  --background: transparent;  
+  --color: #00c851;
+  --border-color: #00c851;
+  --background-hover: #007e33;
+  --background-activated: #007e33;
+  --background-focused: #007e33;
+  --color-hover: white;
+  --color-activated: white;
+  --color-focused: white;
 }

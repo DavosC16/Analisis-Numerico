@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sistema de Ecuaciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h4>Complete el sistema de ecuaciones</h4>
+  <ion-card *ngFor="let ecI of ec; let i = index">
+    <p>Ecuación {{i+1}}</p>
+
+    <ion-row>
+      <ion-col *ngFor="let ecI of ec; let j= index">
+        <ion-input [(ngModel)]="ec[i][j]" type="number"></ion-input>
+        <span>x{{j+1}}</span>
+      </ion-col>
+
+      <ion-col>
+        <ion-input type="number" [(ngModel)]="const[i]"></ion-input>
+        <p>Constante</p>
+      </ion-col>
+    </ion-row>
+    
+  </ion-card>
+
+  <ion-button (click)="Click()">Aceptar</ion-button>
+
+</ion-content>

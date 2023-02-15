@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Matriz Inversa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row *ngFor="let row of inverse; index as i">
+      <ion-col *ngFor="let col of inverse; index as j">
+        {{inverse[i][j]}},
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

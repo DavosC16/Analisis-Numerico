@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Proyecto 1
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,7 +14,9 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <strong>Numero de Variables/Ecuaciones:</strong>
+    <ion-input type="number" placeholder="000" [(ngModel)]="numVar" class="numVar"></ion-input>
+    <ion-button (click)="Click()" mode="ios">Aceptar</ion-button>
   </div>
+
 </ion-content>
