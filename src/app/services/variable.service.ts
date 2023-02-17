@@ -80,8 +80,9 @@ export function montante(){
     for(let i=0; i<num; i++){
         variables[i]=0;
         for(let j=0; j<num; j++){
-            variables[i]=variables[i] + (cons[j]*inverse[i][j]);
+            variables[i]=variables[i] + (cons[j]*adj[i][j]);
         }
+        variables[i]=variables[i]/pivAnt;
     }
 
     console.log(adj);
